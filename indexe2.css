@@ -1,0 +1,85 @@
+body{
+    background-color:whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    position: sticky;
+    top: 0; 
+    background-color: silver;  
+    padding: 1.2vh; 
+    text-align:right; 
+}
+ul{
+    display:flex;
+}
+ul li a{
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    font-size: 20px;
+}
+li{
+    list-style-type: none;
+    font-weight: bold;
+}
+#lis{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding:auto;
+}
+#spana{
+    animation-name: wilow;
+    animation-duration: 10s;
+    scale: 2;
+    animation-iteration-count: infinite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+@keyframes wilow {
+    10%{ color: brown }
+    15%{color:yellowgreen}
+    25%{color:blueviolet}
+    80%{color:whitesmoke}
+    
+}
+label{
+    color: darkcyan;
+    
+}
+    
+ img{
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    animation-duration: 10s;
+    animation-name: william;
+    animation-iteration-count: infinite;
+    overflow: auto;
+}
+p{
+    color: dimgrey;
+    font-size: 3vh;
+}
+.photo{
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+@keyframes william {
+
+    10%{ 
+        transform:translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+li:hover{
+    scale: 1.5;
+    transition:2s;
+}
+button{
+    cursor:pointer;
+}
+ 
